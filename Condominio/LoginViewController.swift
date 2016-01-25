@@ -15,16 +15,21 @@ class LoginViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        hideNavBar()
     }
-   
+    
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
     
     @IBAction func registerButtonPressed(sender: UIButton) {
-        let registerVC = storyboard?.instantiateViewControllerWithIdentifier("RegisterViewController") as! RegisterViewController
-        navigationController?.pushViewController(registerVC, animated: true)
+        let registerVC = storyboard?.instantiateViewController(RegisterViewController.self)
+        navigationController?.pushViewController(registerVC!, animated: true)
+    }
+    
+    @IBAction func login(sender: UIButton) {
+        let selectCondominioVC = storyboard?.instantiateViewController(SelectCondominioViewController.self)
+        navigationController?.pushViewController(selectCondominioVC!, animated: true)
     }
 }
 

@@ -20,8 +20,8 @@ class LaunchViewController: UIViewController {
         let token = ""
         
         if token == "" {
-            let loginVC = storyboard?.instantiateViewControllerWithIdentifier("LoginViewController") as! LoginViewController
-            navigationController?.pushViewController(loginVC, animated: false)
+            let loginVC = storyboard?.instantiateViewController(LoginViewController.self)
+            navigationController?.pushViewController(loginVC!, animated: false)
         }
     }
 }
