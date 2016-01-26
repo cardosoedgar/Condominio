@@ -12,6 +12,7 @@ extension UIStoryboard {
     
     enum Storyboard : String {
         case Main
+        case Condominio
     }
     
     convenience init(storyboard: Storyboard, bundle: NSBundle? = nil) {

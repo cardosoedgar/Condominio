@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Ocorrências-->
+        <scene sceneID="yeR-4C-jOx">
+            <objects>
+                <viewController storyboardIdentifier="OcorrenciasViewController" id="msv-DQ-hsZ" customClass="OcorrenciasViewController" customModule="Condominio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XTq-yo-yAD"/>
+                        <viewControllerLayoutGuide type="bottom" id="T2u-gT-7Lm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LIm-tG-dM1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.89411764709999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ocorrências" image="icon_ocorrencia" id="FiC-Hh-BNq"/>
+                    <navigationItem key="navigationItem" title="Ocorrências" id="q3t-TB-E6v"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rtq-mS-k1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="-466"/>
+        </scene>
+        <!--Portaria-->
+        <scene sceneID="H8B-ZH-boI">
+            <objects>
+                <viewController storyboardIdentifier="PortariaViewController" id="r7B-Y0-nr1" customClass="PortariaViewController" customModule="Condominio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WQW-iv-Svx"/>
+                        <viewControllerLayoutGuide type="bottom" id="ysi-QZ-0eH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MkJ-Vh-Nap">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.89411764709999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Portaria" image="icon_portaria" id="4Ge-mW-rZg"/>
+                    <navigationItem key="navigationItem" title="Portaria" id="sqb-JL-2gM"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i8k-GB-lC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="66"/>
+        </scene>
+        <!--Serviços-->
+        <scene sceneID="UL4-0u-bMm">
+            <objects>
+                <viewController storyboardIdentifier="ServicosViewController" id="2IW-T4-vL1" customClass="ServicosViewController" customModule="Condominio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Zl-WW-0Ji"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yai-Of-tke"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PRh-oU-GHs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.89411764709999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Serviços" image="icon_servicos" id="qY0-Jb-CGa"/>
+                    <navigationItem key="navigationItem" title="Serviços" id="e4P-8k-KUU"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YIO-Lr-RUx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="510"/>
+        </scene>
+        <!--Perfil-->
+        <scene sceneID="fw7-pV-0ht">
+            <objects>
+                <viewController storyboardIdentifier="PerfilViewController" id="RbA-ZU-Aa9" customClass="PerfilViewController" customModule="Condominio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GI3-Mb-pmS"/>
+                        <viewControllerLayoutGuide type="bottom" id="UI1-gp-cvw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fre-1o-Y3s">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.89411764709999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="icon perfil" id="pYt-73-tHE"/>
+                    <navigationItem key="navigationItem" title="Perfil" id="elS-yl-Inf"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pq2-7F-Vip" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="1011"/>
+        </scene>
+        <!--Mural de Avisos-->
+        <scene sceneID="4kf-HC-zqt">
+            <objects>
+                <viewController id="kuU-Ne-2D9" customClass="MuralViewController" customModule="Condominio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j9m-Cm-o4S"/>
+                        <viewControllerLayoutGuide type="bottom" id="ASn-8s-7BC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gOo-eS-WHB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.89411764709999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mural" image="icon_mural" id="Kye-La-nQ1"/>
+                    <navigationItem key="navigationItem" title="Mural de Avisos" id="q8M-lx-KWO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ntp-YX-k5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="328" y="-887"/>
+        </scene>
+        <!--Condominio Tab Controller-->
+        <scene sceneID="grf-Io-2CX">
+            <objects>
+                <tabBarController storyboardIdentifier="CondominioTabController" id="14H-Kr-rLQ" customClass="CondominioTabController" customModule="Condominio" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="v54-Vz-eos">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.80000000000000004" green="0.33725490196078434" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kuU-Ne-2D9" kind="relationship" relationship="viewControllers" id="mmH-ce-fAy"/>
+                        <segue destination="msv-DQ-hsZ" kind="relationship" relationship="viewControllers" id="8EN-LB-MFu"/>
+                        <segue destination="r7B-Y0-nr1" kind="relationship" relationship="viewControllers" id="xDQ-ZO-Duk"/>
+                        <segue destination="2IW-T4-vL1" kind="relationship" relationship="viewControllers" id="5oM-c8-AfK"/>
+                        <segue destination="RbA-ZU-Aa9" kind="relationship" relationship="viewControllers" id="ftX-zy-UaW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fa0-d3-FoU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-501" y="500"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon perfil" width="32" height="32"/>
+        <image name="icon_mural" width="29" height="30"/>
+        <image name="icon_ocorrencia" width="30" height="27"/>
+        <image name="icon_portaria" width="28" height="31"/>
+        <image name="icon_servicos" width="28" height="27"/>
+    </resources>
+</document>

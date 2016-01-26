@@ -32,4 +32,9 @@ extension UIViewController {
         navigationController?.navigationBar.tintColor = mainColor
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: mainColor]
     }
+    
+    func setControllerTitle(title: String) {
+        navigationController?.navigationBar.topItem?.title = title
+        navigationController?.navigationBar.translucent = false
+    }
 }

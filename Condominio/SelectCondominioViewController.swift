@@ -25,12 +25,23 @@ class SelectCondominioViewController: UIViewController, UITableViewDelegate, UIT
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
+        goToCondominio()
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func goToCondominio() {
+        let storyboard = UIStoryboard(storyboard: .Condominio)
+        let condominioVC = storyboard.instantiateViewController(CondominioTabController.self)
+        navigationController?.pushViewController(condominioVC, animated: true)
     }
 
     /*
