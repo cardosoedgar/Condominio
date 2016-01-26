@@ -12,15 +12,15 @@ class SelectCondominioViewController: UIViewController, UITableViewDelegate, UIT
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        showNavBar()
-        hideNavBackButton()
-        setColorForNavBarItems()
+        showNavBar(backButtonHidden: true)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("selectCondominioCell")!
+        let cell = tableView.dequeueReusableCellWithIdentifier("SelectCondominioCell") as! SelectCondominioCell
         
-        cell.textLabel?.text = "Condominio"
+        cell.condominioLabel.text = "Ed. Ciclano Ribaldo"
+        cell.addressLabel.text = "Rua Fulano de Tal, 351"
+        cell.conviteLabel.text = "Solicitação Pendente"
         
         return cell
     }

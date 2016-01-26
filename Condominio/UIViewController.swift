@@ -13,16 +13,18 @@ extension UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
-    func showNavBar() {
+    func showNavBar(backButtonHidden backButtonHidden: Bool) {
         navigationController?.setNavigationBarHidden(false, animated: false)
+        setColorForNavBarItems()
+        hideNavBackButton(backButtonHidden)
     }
     
     func setBarStyle(style: UIBarStyle) {
         navigationController?.navigationBar.barStyle = style
     }
     
-    func hideNavBackButton() {
-        navigationItem.setHidesBackButton(true, animated: false)
+    func hideNavBackButton(backButtonHidden: Bool) {
+        navigationItem.setHidesBackButton(backButtonHidden, animated: false)
     }
     
     func setColorForNavBarItems() {

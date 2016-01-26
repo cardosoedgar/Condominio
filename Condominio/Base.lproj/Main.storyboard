@@ -194,7 +194,7 @@
         <!--Condominios-->
         <scene sceneID="rUC-Wc-A5b">
             <objects>
-                <viewController storyboardIdentifier="SelectCondominioViewController" id="JHo-dV-yur" customClass="SelectCondominioViewController" customModule="Condominio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectCondominioViewController" automaticallyAdjustsScrollViewInsets="NO" id="JHo-dV-yur" customClass="SelectCondominioViewController" customModule="Condominio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cLq-h8-7sC"/>
                         <viewControllerLayoutGuide type="bottom" id="ifZ-vR-Yzr"/>
@@ -203,17 +203,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a5o-a2-vzx">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a5o-a2-vzx">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.8901960784313725" green="0.89411764705882346" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="selectCondominioCell" id="r8D-Z2-ObM">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SelectCondominioCell" rowHeight="62" id="r8D-Z2-ObM" customClass="SelectCondominioCell" customModule="Condominio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r8D-Z2-ObM" id="yD5-hr-90x">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAl-Rt-qfY">
+                                                    <rect key="frame" x="0.0" y="57" width="600" height="5"/>
+                                                    <color key="backgroundColor" red="0.89019607840000003" green="0.89411764709999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="5" id="Oo1-yD-osU"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endereço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twp-zN-hNd">
+                                                    <rect key="frame" x="18" y="31" width="574" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.56078431370000004" green="0.5568627451" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Pendente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUh-Mq-f1p">
+                                                    <rect key="frame" x="531" y="11" width="61" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                    <color key="textColor" red="0.80000000000000004" green="0.33725490200000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome Condomínio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bu8-ed-UQd">
+                                                    <rect key="frame" x="18" y="8" width="505" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <color key="textColor" red="0.011764705882352941" green="0.011764705882352941" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="pAl-Rt-qfY" secondAttribute="trailing" constant="-8" id="0ee-v3-45s"/>
+                                                <constraint firstItem="bu8-ed-UQd" firstAttribute="trailing" secondItem="yD5-hr-90x" secondAttribute="trailingMargin" id="9uk-eB-NLb"/>
+                                                <constraint firstAttribute="topMargin" secondItem="bu8-ed-UQd" secondAttribute="top" id="E74-co-bzZ"/>
+                                                <constraint firstItem="twp-zN-hNd" firstAttribute="top" secondItem="bu8-ed-UQd" secondAttribute="bottom" constant="2" id="Fsb-kZ-PPJ"/>
+                                                <constraint firstItem="pAl-Rt-qfY" firstAttribute="leading" secondItem="yD5-hr-90x" secondAttribute="leadingMargin" constant="-8" id="ZUK-Wd-Hze"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="pAl-Rt-qfY" secondAttribute="bottom" constant="-8" id="cYc-Y0-Gwz"/>
+                                                <constraint firstItem="FUh-Mq-f1p" firstAttribute="baseline" secondItem="bu8-ed-UQd" secondAttribute="baseline" id="pho-ep-53I"/>
+                                                <constraint firstItem="FUh-Mq-f1p" firstAttribute="leading" secondItem="bu8-ed-UQd" secondAttribute="trailing" constant="8" symbolic="YES" id="qNS-3x-5hN"/>
+                                                <constraint firstItem="twp-zN-hNd" firstAttribute="leading" secondItem="yD5-hr-90x" secondAttribute="leadingMargin" constant="10" id="rRQ-if-hR1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="FUh-Mq-f1p" secondAttribute="trailing" id="tsG-sT-FDT"/>
+                                                <constraint firstItem="FUh-Mq-f1p" firstAttribute="leading" secondItem="bu8-ed-UQd" secondAttribute="trailing" constant="-42" id="vsq-JV-F7g"/>
+                                                <constraint firstItem="twp-zN-hNd" firstAttribute="trailing" secondItem="yD5-hr-90x" secondAttribute="trailingMargin" id="wfX-hd-7Aq"/>
+                                                <constraint firstItem="bu8-ed-UQd" firstAttribute="leading" secondItem="yD5-hr-90x" secondAttribute="leadingMargin" constant="10" id="y2k-H0-iRs"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="9uk-eB-NLb"/>
+                                                    <exclude reference="vsq-JV-F7g"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="twp-zN-hNd" id="DBE-w5-x7a"/>
+                                            <outlet property="condominioLabel" destination="bu8-ed-UQd" id="k9b-mQ-dhG"/>
+                                            <outlet property="conviteLabel" destination="FUh-Mq-f1p" id="Ydz-Dz-Qq5"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
