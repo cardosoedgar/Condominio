@@ -35,6 +35,6 @@ extension UIViewController {
     
     func setControllerTitle(title: String) {
         navigationController?.navigationBar.topItem?.title = title
-        navigationController?.navigationBar.translucent = false
+        navigationController?.navigationBar.translucent = true
     }
 }

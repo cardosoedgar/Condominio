@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MuralViewController: UIViewController {
+class MuralViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +16,36 @@ class MuralViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         setControllerTitle("Mural de Avisos")
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("MuralCell") as! MuralCell
+     
+        if indexPath.row == 0 {
+            cell.setCellImportant()
+        } else if indexPath.row == 3 {
+            cell.setCellPoll()
+        } else {
+            cell.setCellNormal()
+        }
+        
+        cell.titleLabel.text = "Falta de Água"
+        cell.descriptionLabel.text = "cano quebrado, previsão de voltar as 16h"
+        cell.dateLabel.text = "29/01"
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
     }
 
     /*
