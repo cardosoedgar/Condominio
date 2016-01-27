@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PerfilViewController: UIViewController {
+class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +17,37 @@ class PerfilViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         setControllerTitle("Perfil")
     }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("customCell")!
+        
+        cell.textLabel?.text = "Perfil"
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 5
+    }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.clearColor()
+        return headerView
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 3
+    }
+
 
     /*
     // MARK: - Navigation
