@@ -16,6 +16,7 @@ class MuralViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewWillAppear(animated: Bool) {
         setControllerTitle("Mural de Avisos")
+        setButtonToRightTabBar(nil)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

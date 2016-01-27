@@ -16,6 +16,7 @@ class ServicosViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         setControllerTitle("Serviços")
+        setButtonToRightTabBar(nil)
     }
     
     /*

@@ -16,6 +16,16 @@ class PortariaViewController: UIViewController, UITableViewDataSource, UITableVi
 
     override func viewWillAppear(animated: Bool) {
         setControllerTitle("Portaria")
+        addButtonNavBar()
+    }
+    
+    func addButtonNavBar() {
+        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addNotification")
+        setButtonToRightTabBar(addButton)
+    }
+    
+    func addNotification() {
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

@@ -16,6 +16,7 @@ class PerfilViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewWillAppear(animated: Bool) {
         setControllerTitle("Perfil")
+        setButtonToRightTabBar(nil)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
