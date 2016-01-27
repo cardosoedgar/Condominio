@@ -207,7 +207,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" red="0.8901960784313725" green="0.89411764705882346" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SelectCondominioCell" rowHeight="62" id="r8D-Z2-ObM" customClass="SelectCondominioCell" customModule="Condominio" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BasicCell" rowHeight="62" id="r8D-Z2-ObM" customClass="BasicCell" customModule="Condominio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r8D-Z2-ObM" id="yD5-hr-90x">
@@ -228,13 +228,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Pendente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUh-Mq-f1p">
-                                                    <rect key="frame" x="531" y="11" width="61" height="17"/>
+                                                    <rect key="frame" x="526" y="11" width="61" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                     <color key="textColor" red="0.80000000000000004" green="0.33725490200000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome Condomínio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bu8-ed-UQd">
-                                                    <rect key="frame" x="18" y="8" width="505" height="21"/>
+                                                    <rect key="frame" x="18" y="8" width="500" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <color key="textColor" red="0.011764705882352941" green="0.011764705882352941" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -250,7 +250,7 @@
                                                 <constraint firstItem="FUh-Mq-f1p" firstAttribute="baseline" secondItem="bu8-ed-UQd" secondAttribute="baseline" id="pho-ep-53I"/>
                                                 <constraint firstItem="FUh-Mq-f1p" firstAttribute="leading" secondItem="bu8-ed-UQd" secondAttribute="trailing" constant="8" symbolic="YES" id="qNS-3x-5hN"/>
                                                 <constraint firstItem="twp-zN-hNd" firstAttribute="leading" secondItem="yD5-hr-90x" secondAttribute="leadingMargin" constant="10" id="rRQ-if-hR1"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="FUh-Mq-f1p" secondAttribute="trailing" id="tsG-sT-FDT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="FUh-Mq-f1p" secondAttribute="trailing" constant="5" id="tsG-sT-FDT"/>
                                                 <constraint firstItem="FUh-Mq-f1p" firstAttribute="leading" secondItem="bu8-ed-UQd" secondAttribute="trailing" constant="-42" id="vsq-JV-F7g"/>
                                                 <constraint firstItem="twp-zN-hNd" firstAttribute="trailing" secondItem="yD5-hr-90x" secondAttribute="trailingMargin" id="wfX-hd-7Aq"/>
                                                 <constraint firstItem="bu8-ed-UQd" firstAttribute="leading" secondItem="yD5-hr-90x" secondAttribute="leadingMargin" constant="10" id="y2k-H0-iRs"/>
@@ -263,9 +263,9 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="addressLabel" destination="twp-zN-hNd" id="DBE-w5-x7a"/>
-                                            <outlet property="condominioLabel" destination="bu8-ed-UQd" id="k9b-mQ-dhG"/>
-                                            <outlet property="conviteLabel" destination="FUh-Mq-f1p" id="Ydz-Dz-Qq5"/>
+                                            <outlet property="descriptionLabel" destination="twp-zN-hNd" id="Vea-R4-6Jb"/>
+                                            <outlet property="detailLabel" destination="FUh-Mq-f1p" id="veC-5O-hxR"/>
+                                            <outlet property="titleLabel" destination="bu8-ed-UQd" id="Rmw-Lg-v8h"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

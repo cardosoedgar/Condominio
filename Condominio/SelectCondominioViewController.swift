@@ -16,11 +16,11 @@ class SelectCondominioViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("SelectCondominioCell") as! SelectCondominioCell
+        let cell = tableView.dequeCustomCell(BasicCell.self)
         
-        cell.condominioLabel.text = "Ed. Ciclano Ribaldo"
-        cell.addressLabel.text = "Rua Fulano de Tal, 351"
-        cell.conviteLabel.text = "Solicitação Pendente"
+        cell.titleLabel.text = "Ed. Ciclano Ribaldo"
+        cell.descriptionLabel.text = "Rua Fulano de Tal, 351"
+        cell.detailLabel.text = "Solicitação Pendente"
         
         return cell
     }

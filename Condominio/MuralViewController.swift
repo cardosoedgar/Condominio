@@ -19,7 +19,7 @@ class MuralViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MuralCell") as! MuralCell
+        let cell = tableView.dequeCustomCell(MuralCell.self)
      
         if indexPath.row == 0 {
             cell.setCellImportant()

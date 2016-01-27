@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OcorrenciasViewController: UIViewController {
+class OcorrenciasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +16,38 @@ class OcorrenciasViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         setControllerTitle("Ocorrências")
+        addButtonNavBar()
+    }
+    
+    func addButtonNavBar() {
+        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addOcorrencia")
+        setButtonToRightTabBar(addButton)
+    }
+    
+    func addOcorrencia() {
+        
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeCustomCell(BasicCell.self)
+        
+        cell.titleLabel.text = "Luz do corredor queimada"
+        cell.descriptionLabel.text = "luz do 5º andar aparenta estar queimada."
+        cell.detailLabel.text = "Pendente"
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
     }
     
     /*

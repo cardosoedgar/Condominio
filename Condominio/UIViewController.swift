@@ -37,4 +37,8 @@ extension UIViewController {
         navigationController?.navigationBar.topItem?.title = title
         navigationController?.navigationBar.translucent = true
     }
+    
+    func setButtonToRightTabBar(button: UIBarButtonItem) {
+        tabBarController?.navigationItem.rightBarButtonItem = button
+    }
 }
